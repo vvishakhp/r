@@ -1,0 +1,8 @@
+<div class="side-bar">
+    <div class="item" *ngFor="let item of items; index as i" (click)="itemClicked(item, i)" [class.active]="i===selectedItem">
+        <div class="icon">
+            <i class="fa fa-{{item.icon}}"></i>
+        </div>
+        <div class="text">{{item.text}}</div>
+    </div>
+</div>

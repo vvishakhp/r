@@ -1,0 +1,31 @@
+<div class="title d-flex bg-primary text-light align-items-center">
+
+  <div class="p-2 logo">
+    RPA Genie
+  </div>
+
+  <span class="space"></span>
+
+  <div class="help-btn p-2 rounded-circle bg-danger align-items-center justify-content-center d-flex">
+    <i class="fa fa-question"></i>
+  </div>
+
+  <div class="p-2">
+    <span>{{displayName}}</span>
+  </div>
+
+  <div class="btns p-0 m-0 d-flex ">
+    <span (click)="minimize()" class="text-light bg-hover-dark align-items-center justify-content-center d-flex">
+      <i class="fa fa-minus"></i>
+    </span>
+    <!--<div class="max" (click)="maximize()" *ngIf="maximized">
+      <i class="fa fa-window-restore"></i>
+    </div>
+    <div class="max" (click)="restore()" *ngIf="!maximized">
+      <i class="fa fa-window-maximize"></i>
+    </div>-->
+    <span (click)="close()" class="text-light bg-hover-danger align-items-center justify-content-center d-flex">
+        <i class="fa fa-times"></i>
+      </span>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+.title {
+  height: 32px;
+}
+
+.logo{
+  -webkit-app-region: drag;
+}
+
+.space {
+  flex: 1 1 auto;
+  height: 100%;
+  -webkit-app-region: drag;
+}
+
+.btns {
+  -webkit-app-region: no-drag;
+  height: 100%;
+
+  span{
+    height: 100%;
+    width: 32px;
+    cursor: pointer;
+  }
+}
+
+.help-btn {
+  height: 20px;
+  width: 20px;
+}

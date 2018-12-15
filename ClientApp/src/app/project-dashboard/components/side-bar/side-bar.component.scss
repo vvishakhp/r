@@ -1,0 +1,28 @@
+.side-bar {
+  width: var(--sidebar-width);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--sidebar-bg);
+  box-shadow: #808080 20px 20px initial;
+}
+
+.item {
+  height: var(--sidebar-width);
+  border-bottom: 1px solid var(--sidebar-border);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--sidebar-fg);
+  font-size: .75rem;
+}
+
+.item:hover {
+  background: var(--sidebar-hover-bg)
+}
+
+.item.active {
+    background: var(--sidebar-active-bg);
+}
